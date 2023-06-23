@@ -18,7 +18,7 @@ const Error = () => {
   }
 
   return (
-    <Box sx={centred} height={"100vh"}>
+    <Box sx={centred} height={"90vh"}>
       <Paper elevation={10} sx={paperStyle}>
         <h1>Sorry!</h1>
         <p>An unexpected error has occured</p>
