@@ -1,21 +1,21 @@
 import { Box, Paper } from "@mui/material";
 import { useRouteError } from "react-router-dom";
 
+const centred = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
+
+const paperStyle = {
+  padding: "15px 60px 60px",
+  ...centred,
+};
+
 const Error = () => {
   const err = useRouteError();
   console.error(err);
-
-  const centred = {
-    display: "flex",
-    flexDirection:"column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const paperStyle ={
-    padding: "15px 60px 60px",
-    ...centred
-  }
 
   return (
     <Box sx={centred} height={"90vh"}>
