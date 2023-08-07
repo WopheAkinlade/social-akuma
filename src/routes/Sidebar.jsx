@@ -6,6 +6,7 @@ import {
   Person,
   Settings,
 } from "@mui/icons-material";
+
 import {
   Box,
   List,
@@ -24,7 +25,7 @@ const mainStyle = {
   flexDirection: "column",
   justiyContent: "center",
   alignItems: "center",
-  borderRight: "1.7px solid"
+  borderRight: "1.7px solid",
 };
 
 const iconStyle = {
@@ -43,53 +44,71 @@ const Sidebar = () => {
       <Box width={"80%"}>
         <List>
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component="a" href="/home">
               <ListItemIcon>
                 <Home sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Homepage</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Homepage
+              </Typography>
             </ListItemButton>
           </ListItem>
+
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
             <ListItemButton component="a" href="#account">
               <ListItemIcon>
                 <Person sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Profile</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Profile
+              </Typography>
             </ListItemButton>
           </ListItem>
+
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
             <ListItemButton component="a" href="#friends">
               <ListItemIcon>
                 <Group sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Friends</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Friends
+              </Typography>
             </ListItemButton>
           </ListItem>
+
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
             <ListItemButton component="a" href="#explore">
               <ListItemIcon>
                 <Explore sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Explore</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Explore
+              </Typography>
             </ListItemButton>
           </ListItem>
+
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
             <ListItemButton component="a" href="#settings">
               <ListItemIcon>
                 <Settings sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Settings</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Settings
+              </Typography>
             </ListItemButton>
           </ListItem>
+
           <ListItem sx={{ marginBottom: 5 }} disablePadding>
             <ListItemButton component="a" href="#messages">
               <ListItemIcon>
                 <Email sx={iconStyle} />
               </ListItemIcon>
-              <Typography fontSize={20} fontWeight={500}>Messages</Typography>
+              <Typography fontSize={20} fontWeight={500}>
+                Messages
+              </Typography>
             </ListItemButton>
           </ListItem>
+
         </List>
       </Box>
     </Box>
