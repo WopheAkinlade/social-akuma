@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css"
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Sidebar from "./routes/root";
 import Error from "./routes/ErrorPage";
+import Root from "./routes/root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Sidebar />,
+    element: <Root />,
     errorElement: <Error />
   },
 ]);
