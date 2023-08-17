@@ -26,6 +26,7 @@ const mainStyle = {
   justiyContent: "center",
   alignItems: "center",
   borderRight: "1.7px solid",
+  position: "fixed",
 };
 
 const iconStyle = {
