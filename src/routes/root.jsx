@@ -1,11 +1,19 @@
-import Sidebar from './Sidebar'
+import { Box } from "@mui/material";
+import Sidebar from "./Sidebar";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div>
-      <Sidebar />
-    </div>
-  )
-}
+    <Box display={"flex"} justifyContent={"space-between"}>
+      <div>
+        <Sidebar />
+      </div>
 
-export default Root
+      <div className="main">
+        <Outlet />
+      </div>
+    </Box>
+  );
+};
+
+export default Root;
