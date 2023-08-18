@@ -48,71 +48,81 @@ const Sidebar = () => {
         <Box width={"80%"}>
           <List>
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-            <Link to={"/home"}>
-              <ListItemButton>
-                <ListItemIcon>
-                  <Home sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Homepage
-                </Typography>
-              </ListItemButton>
+              <Link to={"/home"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Home sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Homepage
+                  </Typography>
+                </ListItemButton>
               </Link>
             </ListItem>
 
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-              <ListItemButton component="a" href="#account">
-                <ListItemIcon>
-                  <Person sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Profile
-                </Typography>
-              </ListItemButton>
+              <Link to={"/profile"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Person sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Profile
+                  </Typography>
+                </ListItemButton>
+              </Link>
             </ListItem>
 
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-              <ListItemButton component="a" href="#friends">
-                <ListItemIcon>
-                  <Group sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Friends
-                </Typography>
-              </ListItemButton>
+              <Link to={"/friends"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Group sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Friends
+                  </Typography>
+                </ListItemButton>
+              </Link>
             </ListItem>
 
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-              <ListItemButton component="a" href="#explore">
-                <ListItemIcon>
-                  <Explore sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Explore
-                </Typography>
-              </ListItemButton>
+              <Link to={"/explore"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Explore sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Explore
+                  </Typography>
+                </ListItemButton>
+              </Link>
             </ListItem>
 
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-              <ListItemButton component="a" href="#settings">
-                <ListItemIcon>
-                  <Settings sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Settings
-                </Typography>
-              </ListItemButton>
+              <Link to={"/settings"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Settings sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Settings
+                  </Typography>
+                </ListItemButton>
+              </Link>
             </ListItem>
 
             <ListItem sx={{ marginBottom: 5 }} disablePadding>
-              <ListItemButton component="a" href="#messages">
-                <ListItemIcon>
-                  <Email sx={iconStyle} />
-                </ListItemIcon>
-                <Typography fontSize={20} fontWeight={500}>
-                  Messages
-                </Typography>
-              </ListItemButton>
+              <Link to={"/messages"}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <Email sx={iconStyle} />
+                  </ListItemIcon>
+                  <Typography fontSize={20} fontWeight={500}>
+                    Messages
+                  </Typography>
+                </ListItemButton>
+              </Link>
             </ListItem>
           </List>
         </Box>
